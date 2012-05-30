@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>AddServlet</servlet-name>
+		<servlet-class>com.cuit.sun.weibo.command.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddServlet</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChangeScheduledServlet</servlet-name>
+		<servlet-class>com.cuit.sun.weibo.command.ChangeScheduledServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeScheduledServlet</servlet-name>
+		<url-pattern>/change</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListServlet</servlet-name>
+		<servlet-class>com.cuit.sun.weibo.command.ListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListServlet</servlet-name>
+		<url-pattern>/list</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PasswordServlet</servlet-name>
+		<servlet-class>com.cuit.sun.weibo.command.PasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PasswordServlet</servlet-name>
+		<url-pattern>/password</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RemoveServlet</servlet-name>
+		<servlet-class>com.cuit.sun.weibo.command.RemoveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveServlet</servlet-name>
+		<url-pattern>/remove</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>StartServlet</servlet-name>
+		<servlet-class>com.cuit.sun.weibo.command.StartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StartServlet</servlet-name>
+		<url-pattern>/start</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>StopServlet</servlet-name>
+		<servlet-class>com.cuit.sun.weibo.command.StopServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StopServlet</servlet-name>
+		<url-pattern>/stop</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
